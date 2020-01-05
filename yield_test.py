@@ -8,9 +8,9 @@ val = foo(0)
 while True:
 	print(next(val))
 	a = input()
-	try:
+	try: #if input is a number
 		a = int(a)
 		val = foo(a)
-	except ValueError:
+	except ValueError: #if input is not a number
 		if a == "exit":
 			exit()
