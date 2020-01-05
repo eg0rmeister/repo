@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 import paho.mqtt.client as mqtt
 client = mqtt.Client()
