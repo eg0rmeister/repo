@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/usr/bin/python3
+=======
+#!C:\\Users\\karpu\\AppData\\Local\\Programs\\Python\\Python38
+>>>>>>> yield
 
 
 import paho.mqtt.client as mqtt
