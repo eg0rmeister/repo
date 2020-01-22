@@ -48,6 +48,7 @@ while True:
         if (k >= 7):
             ser.close()
             b = True
+            print("wrong")
             while b:
                 try:
                     ser.open()
@@ -65,8 +66,9 @@ while True:
                 i = ord(ser.read())
             except TypeError:
                 k += 1
-                if (k >= 100):
+                if (k >= 1000):
                     ser.close()
+                    print("wrong1")
                     ser.open()
                     time.sleep(2)
                 continue
