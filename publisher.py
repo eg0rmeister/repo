@@ -1,13 +1,10 @@
-#!/usr/bin/python3
-#!C:\\Users\\karpu\\AppData\\Local\\Programs\\Python\\Python38
-
-
 import paho.mqtt.client as mqtt
 client = mqtt.Client()
-client.connect("localhost")
+client.connect("127.0.0.1")
 while True:
     i = input("topic(spacebar)message:\n").split()
     try:
         client.publish(i[0], i[1])
     except IndexError:
         continue
+
